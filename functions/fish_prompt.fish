@@ -3,7 +3,7 @@ if ! command -sq starship
     exit
 end
 
-function fish_prompt
+function fish_prompt -d "Starship prompt"
     switch "$fish_key_bindings"
         case fish_{hybrid,vi}_key_bindings
             set STARSHIP_KEYMAP $fish_bind_mode

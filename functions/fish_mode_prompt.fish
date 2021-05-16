@@ -3,5 +3,5 @@ if ! command -sq starship
     exit
 end
 
-function fish_mode_prompt
+function fish_mode_prompt -d "Mode prompt disabled by Starship prompt"
 end
