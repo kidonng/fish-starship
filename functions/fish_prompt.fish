@@ -1,5 +1,5 @@
 if ! command -sq starship
-    builtin source $__fish_data_dir/functions/fish_prompt.fish
+    source $__fish_data_dir/functions/fish_prompt.fish
     exit
 end
 
@@ -11,5 +11,5 @@ function fish_prompt
             set STARSHIP_KEYMAP insert
     end
 
-    command starship prompt -d $CMD_DURATION -k $STARSHIP_KEYMAP -s $status -j (jobs | count)
+    starship prompt -d $CMD_DURATION -k $STARSHIP_KEYMAP -s $status -j (jobs | count)
 end

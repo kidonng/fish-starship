@@ -1,1 +1,1 @@
-command starship completions fish | builtin source
+starship completions fish | source

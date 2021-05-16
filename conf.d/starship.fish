@@ -5,11 +5,11 @@ end
 
 function _starship_uninstall -e starship_uninstall
     for prompt in fish_{,mode_}prompt
-        builtin source $__fish_data_dir/functions/$prompt.fish
+        source $__fish_data_dir/functions/$prompt.fish
     end
 
     set -e STARSHIP_SESSION_KEY STARSHIP_SHELL VIRTUAL_ENV_DISABLE_PROMPT
-    builtin functions -e _starship_{,un}install
+    functions -e _starship_{,un}install
 end
 
 if ! status -i || ! command -sq starship
