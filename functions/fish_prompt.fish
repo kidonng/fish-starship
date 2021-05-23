@@ -11,5 +11,5 @@ function fish_prompt -d "Starship prompt"
             set STARSHIP_KEYMAP insert
     end
 
-    starship prompt -d $CMD_DURATION -k $STARSHIP_KEYMAP -s $status -j (jobs | count)
+    starship prompt -d $CMD_DURATION -k $STARSHIP_KEYMAP -s $status -j (count (jobs -p))
 end
