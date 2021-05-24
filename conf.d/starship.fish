@@ -8,7 +8,7 @@ function _starship_uninstall -e starship_uninstall
         source $__fish_data_dir/functions/$prompt.fish
     end
 
-    set -e STARSHIP_SESSION_KEY STARSHIP_SHELL VIRTUAL_ENV_DISABLE_PROMPT
+    set -e STARSHIP_{SESSION_KEY,SHELL} VIRTUAL_ENV_DISABLE_PROMPT
     functions -e _starship_{,un}install
 end
 
