@@ -16,4 +16,4 @@ if ! status -i || ! command -sq starship
     exit
 end
 
-set -x STARSHIP_SESSION_KEY (random 10000000000000 9999999999999999)
+set -gx STARSHIP_SESSION_KEY (random 10000000000000 9999999999999999)
