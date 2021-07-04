@@ -1,4 +1,4 @@
-# 🐟🚀 starship.fish
+# 🚀🐟 starship.fish
 
 [Fish](https://fishshell.com/) plugin for [Starship](https://starship.rs/).
 
